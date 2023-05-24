@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\888\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\888\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_Homework.780257445.00" t="ExcludeRecursive" />
+    <e p="D:\learn\Server\HomeWork\HomeWork" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Scripts" t="Include">
+          <e p="Character Stats" t="Include">
+            <e p="CharacterData_SO.cs" t="Include" />
+            <e p="CharacterStats.cs" t="Include" />
+          </e>
+          <e p="Enemy" t="Include">
+            <e p="EnemyConcroller.cs" t="Include" />
+            <e p="EnemySpawn.cs" t="Include" />
+            <e p="IEnemy.cs" t="Include" />
+          </e>
+          <e p="Player" t="Include">
+            <e p="AttackController.cs" t="Include" />
+            <e p="AttribController.cs" t="Include" />
+            <e p="CameraController.cs" t="Include" />
+            <e p="MoveController.cs" t="Include" />
+            <e p="PlayerConctroller.cs" t="Include" />
+            <e p="SkillManager" t="Include">
+              <e p="Base" t="Include">
+                <e p="BaseSkill.cs" t="Include" />
+              </e>
+              <e p="Concrete" t="Include">
+                <e p="SkillFour.cs" t="Include" />
+                <e p="SkillOne.cs" t="Include" />
+                <e p="SkillThree.cs" t="Include" />
+                <e p="SkillTwo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Tool" t="Include">
+            <e p="AssetFactory" t="Include">
+              <e p="IAssetFactory.cs" t="Include" />
+              <e p="ResourceAssetFactory.cs" t="Include" />
+              <e p="ResourceAssetProxy.cs" t="Include" />
+            </e>
+            <e p="EvenCenter.cs" t="Include" />
+            <e p="ExtensionMethod.cs" t="Include" />
+            <e p="GameControler.cs" t="Include" />
+            <e p="GameFacade.cs" t="Include" />
+            <e p="GameLoop.cs" t="Include" />
+            <e p="Other" t="Include">
+              <e p="Box.cs" t="Include" />
+              <e p="Door.cs" t="Include" />
+            </e>
+            <e p="SceneStateManager" t="Include">
+              <e p="Base" t="Include">
+                <e p="SceneState.cs" t="Include" />
+              </e>
+              <e p="Concrete" t="Include">
+                <e p="LoadScene.cs" t="Include" />
+                <e p="MainScene.cs" t="Include" />
+                <e p="StartScene.cs" t="Include" />
+              </e>
+              <e p="SceneStateController.cs" t="Include" />
+            </e>
+          </e>
+          <e p="UI" t="Include">
+            <e p="Base" t="Include">
+              <e p="BasePanel.cs" t="Include" />
+              <e p="UIType.cs" t="Include" />
+            </e>
+            <e p="ConcreteUIPanel" t="Include">
+              <e p="MainPanel.cs" t="Include" />
+              <e p="OverPanel.cs" t="Include" />
+              <e p="StartPanel.cs" t="Include" />
+            </e>
+            <e p="PanelManager.cs" t="Include" />
+            <e p="UIManager.cs" t="Include" />
+            <e p="UITool.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="Homework.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\Bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

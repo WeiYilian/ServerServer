@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2e65f7a4-ae3f-47f5-9e4b-913d273283d5" name="默认的" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/IEnemy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2E0A4813-4CC8-4502-8FB1-1656FDC79D23/58/56962a58/KeyCode.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tool/Other/Door.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/AttackController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tool/SceneStateManager/Concrete/StartScene.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ConcreteUIPanel/OverPanel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/AttribController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/SkillManager/Concrete/SkillFour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ConcreteUIPanel/MainPanel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tool/GameControler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemySpawn.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/PanelManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tool/EvenCenter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyConcroller.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tool/Other/Box.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <changedPaths>
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController/AttribController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController/CameraController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController/PlayerConctroller.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController/MoveController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Manager/SkillManager/Concrete/SkillFour.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/LoginPanel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/RegisterPanel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/SetPanel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/UserMessagePanel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UIPanel/Managers/ConcreteManager/AccountManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterController/PlayerController/CameraController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterController/PlayerController/AttribController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterController/PlayerController/MoveController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterController/PlayerController/PlayerConctroller.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PlayerConctroller.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MoveController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/SkillManager/Base/BaseSkill.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Base/BasePanel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/ConcreteUIPanel/OverPanel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/ConcreteUIPanel/StartPanel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/SkillManager/Concrete/SkillThree.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/SkillManager/Concrete/SkillFour.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Tool/SceneStateManager/Concrete/LoadScene.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Tool/SceneStateManager/Concrete/StartScene.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/SkillManager/Concrete/SkillOne.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/SkillManager/Concrete/SkillTwo.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Character Stats/ScriptableObject/CharacterData_SO.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Character Stats/ScriptableObject/CharacterStats.cs" />
+      <option value="$PROJECT_DIR$/Assets/RPGCombatSystem/Scripts/PlayerController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/PanelManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/CameraController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Flooded_Grounds/PostProcessing/Editor/PropertyDrawers/MinDrawer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/AttackController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Tool/AssetFactory/ResourceAssetFactory.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/MoveController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Tool/Other/Door.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemySpawn.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyConcroller.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Tool/GameLoop.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Tool/SceneStateManager/Concrete/MainScene.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Tool/EvenCenter.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Tool/Gamemanager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Tool/GameFacade.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Character Stats/CharacterStats.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/AttribController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerConctroller.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Tool/Other/Box.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/ConcreteUIPanel/MainPanel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Tool/GameManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Tool/GameControler.cs" />
+    </changedPaths>
+  </component>
+  <component name="ProjectId" id="2PqzjyZkdxWYgjgUXtXjctjDWQr" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="2e65f7a4-ae3f-47f5-9e4b-913d273283d5" name="默认的" comment="" />
+      <created>1684199561415</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1684199561415</updated>
+      <workItem from="1684199577401" duration="10775000" />
+      <workItem from="1684234056203" duration="8947000" />
+      <workItem from="1684370750659" duration="14167000" />
+      <workItem from="1684475376814" duration="12259000" />
+      <workItem from="1684652368049" duration="3796000" />
+      <workItem from="1684742509327" duration="3142000" />
+      <workItem from="1684802449434" duration="7347000" />
+      <workItem from="1684842469716" duration="7837000" />
+      <workItem from="1684890206381" duration="16386000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>
