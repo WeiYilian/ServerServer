@@ -15,8 +15,6 @@ public class GameFacade : MonoBehaviour
 
     private PanelManager panelManager;
 
-    private GameControler gameControler;
-
     public string PlayerName
     {
         get => playerName;
@@ -27,12 +25,6 @@ public class GameFacade : MonoBehaviour
     {
         get => panelManager;
         set => panelManager = value;
-    }
-
-    public GameControler GameControler
-    {
-        get => gameControler;
-        set => gameControler = value;
     }
 
     private void Awake()
@@ -49,7 +41,6 @@ public class GameFacade : MonoBehaviour
         
         assetFactory = new ResourceAssetProxy();
         panelManager = new PanelManager();
-        gameControler = GameObject.Find("photograther").GetComponent<GameControler>();
     }
 
     #region 加载资源

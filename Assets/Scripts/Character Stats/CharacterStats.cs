@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Numerics;
 using UnityEngine;
+using UnityEngine.AI;
 using Random = UnityEngine.Random;
 using Vector3 = UnityEngine.Vector3;
 
@@ -32,13 +33,14 @@ public class CharacterStats : MonoBehaviour
 
             CurrentDefence = 1 * playerLevel;
 
-            if (GameFacade.Instance.GameControler.IsFinalStage)
+            if (GameController.Instance.IsFinalStage)
             {
                 //最终模式下，全部属性翻倍
                 CurrentHealth *= 2;
                 MinDamage *= 2;
                 MaxDamage *= 2;
                 CurrentDefence *= 2;
+                GetComponent<NavMeshAgent>().speed = 1.5f;
             }
         }
     }

@@ -27,6 +27,6 @@ MonoBehaviour:
   currentLevel: 1
   maxLevel: 10
   baseExp: 100
-  currentExp: 4
+  currentExp: 0
   levelBuff: 0.1
   attributePoints: 2

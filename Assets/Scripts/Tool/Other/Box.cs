@@ -44,7 +44,7 @@ public class Box : MonoBehaviour
                 animator.SetTrigger("Open");
                 transform.GetChild(3).localRotation = Quaternion.Euler(-240,0,0);
                 Tip.SetActive(false);
-                GameFacade.Instance.GameControler.Box++;
+                GameController.Instance.Box++;
             }
         }
     }

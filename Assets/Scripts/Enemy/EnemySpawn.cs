@@ -6,6 +6,8 @@ using Random = UnityEngine.Random;
 public class EnemySpawn : MonoBehaviour
 {
     public bool canSpawn;
+
+    public int Zombies;
     
     //刷新范围
     public float Range = 5;
@@ -13,21 +15,24 @@ public class EnemySpawn : MonoBehaviour
     //刷新间隔
     public float intervalTime = 10f;
 
-    private void OnEnable()
+    private void Start()
     {
+        if (GameController.Instance.IsFinalStage)
+            intervalTime = 3f;
         InvokeRepeating(nameof(RandomSpawnEnemy),1f,intervalTime);
     }
 
     public void RandomSpawnEnemy()
     {
-        if (!canSpawn) return;
+        if (GameLoop.Instance.isTimeOut) return;
+        if (!canSpawn || Zombies >= 15) return;
         
         
         int zombieIndex = Random.Range(1, 10);
         GameObject go = GameFacade.Instance.LoadGameObject("Zombie" + zombieIndex);
         Instantiate(go, transform);
+        Zombies++;
         go.transform.localPosition = RandomSpawnPoint();
-        //canSpawn = false;
     }
     
     /// <summary>

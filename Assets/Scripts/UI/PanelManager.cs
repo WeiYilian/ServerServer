@@ -72,8 +72,8 @@ public class PanelManager
 
    public MainPanel MainPanel()
    {
-      if (stackPanel.Peek().UIType.Name == "MainPanel")
-         return stackPanel.Peek() as MainPanel;
+      if (CurrentPanel().GetType() == typeof(MainPanel))
+         return CurrentPanel() as MainPanel;
       return null;
    }
 }

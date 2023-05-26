@@ -31,14 +31,9 @@ public class StartPanel : BasePanel
         UITool.GetOrAddComponentInChildren<Button>("BtnPlay").onClick.AddListener(() =>
         {
             //打开登录面板
-            //TODO:Push(new LoginPanel());
+            Push(new LoginPanel());
         });
-        UITool.GetOrAddComponentInChildren<Button>("BtnUserManager").onClick.AddListener(() =>
-        {
-            //打开账号管理面板
-            //Push(new UserManagerPanel());
-        });
-        
+
         UITool.GetOrAddComponentInChildren<Button>("ExitGame").onClick.AddListener(() =>
        {
         #if UNITY_EDITOR

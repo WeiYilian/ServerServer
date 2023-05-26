@@ -9,14 +9,27 @@ public class OverPanel : BasePanel
 
     private string message;
 
-    public OverPanel(string message) : base(new UIType(path))
+    private bool isGameOver;
+
+    public OverPanel(string message,bool GameOver = false) : base(new UIType(path))
     {
         this.message = message;
+        isGameOver = GameOver;
     }
 
     public override void OnEnter()
     {
+        if(isGameOver) UITool.GetOrAddComponentInChildren<Button>("Next").gameObject.SetActive(false);
+        
         GameObject.Find("Canvas").transform.Find("OverPanel/Text").GetComponent<Text>().text = message;
+
+        if (!isGameOver)
+        {
+             UITool.GetOrAddComponentInChildren<Button>("Next").onClick.AddListener(() =>
+            {
+                SceneStateController.Instance.SetState(new Game2Scene());
+            });
+        }
         
         UITool.GetOrAddComponentInChildren<Button>("Resume").onClick.AddListener(() =>
         {

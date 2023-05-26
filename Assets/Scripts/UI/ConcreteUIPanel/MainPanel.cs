@@ -37,6 +37,8 @@ public class MainPanel : BasePanel
     public override void OnUpdata()
     {
         //TODO:加其他模块
+        if(Input.GetKeyDown(KeyCode.Return))
+            Push(new ChatPanel());
         // if (Input.GetKeyDown(KeyCode.B))
         // {
         //     Push(new CharacterPanel());
@@ -91,12 +93,12 @@ public class MainPanel : BasePanel
         if(PlayerConctroller.Instance.CharacterStats.CurrentHealth <= 0)
         {
             if (!GameObject.Find("Canvas/OverPanel"))
-                GameFacade.Instance.PanelManager.Push(new OverPanel("任务失败"));
+                GameFacade.Instance.PanelManager.Push(new OverPanel("游戏失败",true));
         }
         else
         {
             if (!GameObject.Find("Canvas/OverPanel"))
-                GameFacade.Instance.PanelManager.Push(new OverPanel("任务成功"));
+                GameFacade.Instance.PanelManager.Push(new OverPanel("游戏通关"));
         }
     }
 }

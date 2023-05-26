@@ -6,6 +6,18 @@
     <e p="D:\learn\Server\HomeWork\HomeWork" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Package" t="Include">
+          <e p="Hovl Studio" t="Include">
+            <e p="Procedural fire" t="Include">
+              <e p="Demo scene" t="Include">
+                <e p="Readme.txt" t="Include" />
+              </e>
+              <e p="Shaders" t="Include">
+                <e p="FireSphere.shader" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
         <e p="Scripts" t="Include">
           <e p="Character Stats" t="Include">
             <e p="CharacterData_SO.cs" t="Include" />
@@ -34,6 +46,15 @@
               </e>
             </e>
           </e>
+          <e p="Server" t="Include">
+            <e p="BaseRequest.cs" t="Include" />
+            <e p="ChatMainPanel.cs" t="Include" />
+            <e p="ChatRequest.cs" t="Include" />
+            <e p="ClientManager.cs" t="Include" />
+            <e p="LoginRequest.cs" t="Include" />
+            <e p="Message.cs" t="Include" />
+            <e p="RegisterRequest.cs" t="Include" />
+          </e>
           <e p="Tool" t="Include">
             <e p="AssetFactory" t="Include">
               <e p="IAssetFactory.cs" t="Include" />
@@ -42,7 +63,7 @@
             </e>
             <e p="EvenCenter.cs" t="Include" />
             <e p="ExtensionMethod.cs" t="Include" />
-            <e p="GameControler.cs" t="Include" />
+            <e p="GameController.cs" t="Include" />
             <e p="GameFacade.cs" t="Include" />
             <e p="GameLoop.cs" t="Include" />
             <e p="Other" t="Include">
@@ -54,6 +75,7 @@
                 <e p="SceneState.cs" t="Include" />
               </e>
               <e p="Concrete" t="Include">
+                <e p="Game2Scene.cs" t="Include" />
                 <e p="LoadScene.cs" t="Include" />
                 <e p="MainScene.cs" t="Include" />
                 <e p="StartScene.cs" t="Include" />
@@ -67,8 +89,13 @@
               <e p="UIType.cs" t="Include" />
             </e>
             <e p="ConcreteUIPanel" t="Include">
+              <e p="ChatPanel.cs" t="Include" />
+              <e p="ConfirmPanel.cs" t="Include" />
+              <e p="LoginPanel.cs" t="Include" />
               <e p="MainPanel.cs" t="Include" />
+              <e p="NoticePanel.cs" t="Include" />
               <e p="OverPanel.cs" t="Include" />
+              <e p="RegisterPanel.cs" t="Include" />
               <e p="StartPanel.cs" t="Include" />
             </e>
             <e p="PanelManager.cs" t="Include" />

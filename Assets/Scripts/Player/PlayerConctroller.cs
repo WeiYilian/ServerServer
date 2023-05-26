@@ -25,6 +25,9 @@ public class PlayerConctroller : MonoBehaviour
 
     private string playerName;
 
+    private bool isInit;
+    
+
     //判断是否可以移动
     private bool canMove = true;
     //判断是否被击打
@@ -86,8 +89,8 @@ public class PlayerConctroller : MonoBehaviour
     private void Start()
     {
         Init();
-        attackController.Init();
-        attribController.Init();
+
+        GameController.Instance.Box = 2;
     }
 
     
@@ -109,7 +112,14 @@ public class PlayerConctroller : MonoBehaviour
     
     public void Update()
     {
-        if (isDeath) return;
+        if (!isInit)
+        {
+            isInit = true;
+            attackController.Init();
+            attribController.Init();
+        }
+        
+        if (isDeath || GameLoop.Instance.isTimeOut) return;
         
         PlayerDeath();
         
@@ -138,8 +148,7 @@ public class PlayerConctroller : MonoBehaviour
         if(characterStats.CurrentHealth <= 0)
         {
             isDeath = true;
-            if (!animator.GetCurrentAnimatorStateInfo(3).IsName("Die") && !isDeath)
-                animator.SetBool("Death", isDeath);
+            animator.SetTrigger("Die");
             EvenCenter.BroadCast(EventNum.GAMEOVER);
         }
     }

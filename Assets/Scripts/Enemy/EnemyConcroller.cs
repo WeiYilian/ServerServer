@@ -123,6 +123,13 @@ public class EnemyConcroller : MonoBehaviour,IEnemy
         switch (enemyStates)
         {
             case EnemyStates.GUARD://站桩模式的敌人
+                
+                if(GameController.Instance.IsFinalStage)
+                {
+                    AttackTarget = PlayerConctroller.Instance.gameObject;
+                    enemyStates = EnemyStates.CHASE;
+                }
+                
                 isChase = false;
                 agent.isStopped = true;
 
@@ -141,6 +148,13 @@ public class EnemyConcroller : MonoBehaviour,IEnemy
                 }
                 break;
             case EnemyStates.PATROL://巡逻模式的敌人
+                
+                if(GameController.Instance.IsFinalStage)
+                {
+                    AttackTarget = PlayerConctroller.Instance.gameObject;
+                    enemyStates = EnemyStates.CHASE;
+                }
+                
                 isChase = false;
                 agent.speed = speed;
                 //判断是否到了随机巡逻点
@@ -164,7 +178,7 @@ public class EnemyConcroller : MonoBehaviour,IEnemy
 
                 agent.speed = speed * 7;
                 
-                if (!FoundPlayer())
+                if (!FoundPlayer()  && !GameController.Instance.IsFinalStage)
                 {
                     isFollow = false;
                     if (remainLookAtTime > 0)
@@ -180,6 +194,10 @@ public class EnemyConcroller : MonoBehaviour,IEnemy
                 }
                 else
                 {
+                    if(GameController.Instance.IsFinalStage)
+                        AttackTarget = PlayerConctroller.Instance.gameObject;
+                    
+                    
                     isFollow = true;
                     if(animator.GetCurrentAnimatorStateInfo(1).IsName("Run"))
                     {
