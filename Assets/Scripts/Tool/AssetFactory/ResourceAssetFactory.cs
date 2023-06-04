@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ResourceAssetFactory : IAssetFactory
 {
-    public string AudioClipPath = "music/";
+    public string AudioClipPath = "Sound/";
     public string SpritePath = "Sprite/";
     public string GOSPath = "GameObject/";
 

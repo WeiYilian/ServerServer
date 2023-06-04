@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Net.Sockets;
 using System.Net;
+using System.Net.NetworkInformation;
 using Common;
 
 public class ClientManager : MonoBehaviour
@@ -23,9 +24,33 @@ public class ClientManager : MonoBehaviour
 
     public string Username { get => username; set => username = value; }
 
+    //获取IP的静态方法
+    public static string getLocalIPAddressWithNetworkInterface(NetworkInterfaceType _type)
+    {
+        string output = "";
+        foreach (NetworkInterface item in NetworkInterface.GetAllNetworkInterfaces())
+        {
+            if (item.NetworkInterfaceType == _type && item.OperationalStatus == OperationalStatus.Up)
+            {
+                foreach (UnicastIPAddressInformation ip in item.GetIPProperties().UnicastAddresses)
+                {
+                    if (ip.Address.AddressFamily == AddressFamily.InterNetwork)
+                    {
+                        output = ip.Address.ToString();
+                    }
+                }
+            }
+        }
+        Console.WriteLine("IP Address = " + output);
+        return output;
+    }
+
     private void Awake()
     {
-        Instance = this;
+        if(!Instance)
+            Instance = this;
+        
+        IP = getLocalIPAddressWithNetworkInterface(NetworkInterfaceType.Wireless80211);//获取ip
     }
 
     private void Start()
@@ -65,7 +90,7 @@ public class ClientManager : MonoBehaviour
     private void OnProcessMessage(ActionCode actionCode, string data)
     {
         Debug.Log("接收到服务器的数据："+data);
-        //TODO：把得到的请求数据，分发给不同的Request响应
+        //把得到的请求数据，分发给不同的Request响应
         BaseRequest baseRequest;
         requestDict.TryGetValue(actionCode, out baseRequest);
         baseRequest.OnReponse(data);

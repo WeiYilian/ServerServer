@@ -11,8 +11,7 @@ public class SkillTwo : BaseSkill
     
     public override void EmitSpecialEffects()
     {
-        //TODO:重击声音
-        
+
         base.EmitSpecialEffects();
     }
 

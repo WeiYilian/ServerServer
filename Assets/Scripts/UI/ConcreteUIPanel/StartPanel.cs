@@ -16,9 +16,21 @@ public class StartPanel : BasePanel
     
     public override void OnEnter()
     {
-
         UITool.GetOrAddComponentInChildren<Button>("BtnVoice").onClick.AddListener(() =>
         {
+            isMute = !isMute;
+            if (!isMute)
+                GameObject.Find("StartPanel").transform.Find("BtnVoice").GetComponent<Image>().sprite =
+                    GameFacade.Instance.LoadSprite("audio_on");
+            else
+                GameObject.Find("StartPanel").transform.Find("BtnVoice").GetComponent<Image>().sprite =
+                    GameFacade.Instance.LoadSprite("audio_mute");
+            AudioManager.Instance.IsMute = isMute;
+        });
+        
+        UITool.GetOrAddComponentInChildren<Button>("BtnVoice").onClick.AddListener(() =>
+        {
+            AudioManager.Instance.PlayButtonAudio();
             isMute = !isMute;
             if (!isMute)
                 GameObject.Find("StartPanel").transform.Find("BtnVoice").GetComponent<Image>().sprite =
@@ -30,12 +42,14 @@ public class StartPanel : BasePanel
         
         UITool.GetOrAddComponentInChildren<Button>("BtnPlay").onClick.AddListener(() =>
         {
+            AudioManager.Instance.PlayButtonAudio();
             //打开登录面板
             Push(new LoginPanel());
         });
 
         UITool.GetOrAddComponentInChildren<Button>("ExitGame").onClick.AddListener(() =>
        {
+           AudioManager.Instance.PlayButtonAudio();
         #if UNITY_EDITOR
             UnityEditor.EditorApplication.isPlaying = false;//在编辑器中退出
         #else

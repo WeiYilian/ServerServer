@@ -13,6 +13,8 @@ public class RegisterPanel : BasePanel
     private RegisterRequest registerRequest;
 
     private bool isLoadChatPanel;//判断是否可以在主线程切换到聊天室里面
+
+    private bool RegisterFail;
     
     public override void OnEnter()
     {
@@ -22,12 +24,11 @@ public class RegisterPanel : BasePanel
 
         UITool.GetOrAddComponentInChildren<Button>("BtnRegister").onClick.AddListener(() =>
         {
+            AudioManager.Instance.PlayButtonAudio();
             //将账号密码加入数据库
             string username = UITool.FindChildGameObject("UserName").GetComponentInChildren<InputField>().text;
             string password = UITool.FindChildGameObject("PassWord").GetComponentInChildren<InputField>().text;
-            string age = UITool.FindChildGameObject("Age").GetComponentInChildren<InputField>().text;
-            string gender = UITool.FindChildGameObject("Gender").transform.GetChild(1).GetComponentInChildren<Text>().text;
-            
+
             if (string.IsNullOrEmpty(username))
             {
                 Debug.Log("用户名不能为空");
@@ -42,21 +43,26 @@ public class RegisterPanel : BasePanel
             // 发送数据给服务器
             registerRequest.SendRequest(username,password);
             
-            if (isLoadChatPanel)
-            {
-                isLoadChatPanel = false;
-                Pop();
-                Push((new NoticePanel("注册成功")));
-            }
-            else
-            {
-                Push((new NoticePanel("注册失败，用户名已被使用")));
-            }
-            
-            
+           
         });
     }
-    
+
+    public override void OnUpdata()
+    {
+         if (isLoadChatPanel)
+        {
+            isLoadChatPanel = false;
+            Pop();
+            Push((new NoticePanel("注册成功")));
+        }
+         
+        if(RegisterFail)
+        {
+            RegisterFail = false;
+            Push((new NoticePanel("注册失败，用户名已被使用")));
+        }
+    }
+
     //点击注册界面的注册按钮后接收到响应的方法
     public void OnRegisterResponse(ReturnCode requestCode)
     {
@@ -67,6 +73,7 @@ public class RegisterPanel : BasePanel
         }
         else
         {
+            RegisterFail = true;
             Debug.Log("注册失败");
         }
     }

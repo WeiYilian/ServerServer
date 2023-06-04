@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.PlayerLoop;
@@ -13,18 +14,19 @@ public class EnemySpawn : MonoBehaviour
     public float Range = 5;
     
     //刷新间隔
-    public float intervalTime = 10f;
+    public float intervalTime = 50f;
 
     private void Start()
     {
         if (GameController.Instance.IsFinalStage)
-            intervalTime = 3f;
+            intervalTime = 10f;
+        
         InvokeRepeating(nameof(RandomSpawnEnemy),1f,intervalTime);
     }
 
     public void RandomSpawnEnemy()
     {
-        if (GameLoop.Instance.isTimeOut) return;
+        if (GameLoop.Instance.isTimeOut || GameController.Instance.FirstOver) return;
         if (!canSpawn || Zombies >= 15) return;
         
         

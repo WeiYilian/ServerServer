@@ -29,13 +29,12 @@ public class AttribController
 
     public void Init()
     {
-        PanelManager panelManager = GameFacade.Instance.PanelManager;
-        userName = panelManager.MainPanel().userName;
-        levelText = panelManager.MainPanel().levelText;
-        hp = panelManager.MainPanel().hp;
-        exp = panelManager.MainPanel().exp; 
-        hpText = panelManager.MainPanel().hpText;
-        expText = panelManager.MainPanel().expText;
+        userName = playerConctroller.MainPanel.userName;
+        levelText = playerConctroller.MainPanel.levelText;
+        hp = playerConctroller.MainPanel.hp;
+        exp = playerConctroller.MainPanel.exp; 
+        hpText = playerConctroller.MainPanel.hpText;
+        expText = playerConctroller.MainPanel.expText;
     }
 
 

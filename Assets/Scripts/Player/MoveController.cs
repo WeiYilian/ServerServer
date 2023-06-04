@@ -69,9 +69,6 @@ public class MoveController
     /// </summary>
     public void PlayerAction()
     {
-        //如果挨打，直接返回
-        if (PlayerConctroller.IsHit) return;
-
         //改变移动速度
         if (animator.GetCurrentAnimatorStateInfo(0).IsName("Roll"))
             speed = mRollSpeed;

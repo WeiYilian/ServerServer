@@ -22,7 +22,6 @@ public class AttackController
         animator = PlayerConctroller.animator;
         characterStats = PlayerConctroller.CharacterStats;
         Skills = new List<BaseSkill>();
-        //TODO：MainPanel.PlayerInit += Init;
     }
 
     public void Init()
@@ -62,13 +61,6 @@ public class AttackController
     /// </summary>
     public void Attack()
     {
-        //动作被打断
-        if (PlayerConctroller.IsHit)
-        {
-            comboStep = 0;
-            return;
-        }
-
         SkillTrigger();
 
         NormalAttack();
@@ -90,6 +82,7 @@ public class AttackController
             if (comboStep > 4)
                 comboStep = 1;
             timer = interval;
+            AudioManager.Instance.PlayAudio(2,"SwingEmpty");
             animator.SetTrigger("Attack");
             animator.SetInteger("ComboStep",comboStep);
         }
@@ -146,9 +139,10 @@ public class AttackController
         }
         if (Input.GetKeyUp(KeyCode.R) && !PlayerConctroller.IsAttack && !Skills[2].IsCooling)
         {
-            //PlayerConctroller.IsAttack = true;
+            PlayerConctroller.IsAttack = true;
             Skills[2].Image.fillAmount = 1;
             animator.SetTrigger("Attack");
+            animator.SetBool("ReturnHP",true);
             animator.SetInteger("SkillIndex",3);
         }
         

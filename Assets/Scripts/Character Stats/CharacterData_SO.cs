@@ -68,6 +68,8 @@ public class CharacterData_SO : ScriptableObject
     /// </summary>
     private void LeveUp()
     {
+        PlayerConctroller.Instance.LevelUP.SetActive(true);
+        PlayerConctroller.Instance.LevelUP.GetComponent<ParticleSystem>().Play();
         //所有想要提升的数据方法都可以写到这里
         currentLevel = Mathf.Clamp(currentLevel + 1, 0, maxLevel);//限制等级不能超过最大等级
         

@@ -10,12 +10,16 @@ public class MainPanel : BasePanel
     
     public MainPanel():base(new UIType(path)){}
 
+    public GameObject mainPanel;
+    
     public Text userName;
 
     public Text hpText;
     public Text expText;
     public Image hp;
     public Image exp;
+
+    public GameObject BossHealth;
 
     public Text levelText;
 
@@ -36,23 +40,17 @@ public class MainPanel : BasePanel
     // ReSharper disable Unity.PerformanceAnalysis
     public override void OnUpdata()
     {
-        //TODO:加其他模块
+        //加其他模块
+        if (Input.GetKeyDown(KeyCode.B))
+        {
+            Push(new CharacterPanel());
+        }
         if(Input.GetKeyDown(KeyCode.Return))
             Push(new ChatPanel());
-        // if (Input.GetKeyDown(KeyCode.B))
-        // {
-        //     Push(new CharacterPanel());
-        // }
-        //
-        // if (Input.GetKeyDown(KeyCode.P))
-        // {
-        //     Push(new PlayerTaskPanel());
-        // }
-        //
-        // if (Input.GetKeyDown(KeyCode.Escape))
-        // {
-        //     Push(new SetPanel());
-        // }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Push(new SetPanel());
+        }
     }
 
     public override void OnPause()
@@ -74,7 +72,7 @@ public class MainPanel : BasePanel
 
     public void Init()
     {
-        GameObject mainPanel = GameObject.Find("Canvas/MainPanel");
+        mainPanel = GameObject.Find("Canvas/MainPanel");
         userName = mainPanel.transform.Find("Header/Left/UserName").GetComponent<Text>();
         levelText = mainPanel.transform.Find("Header/Left/LV").GetComponent<Text>();
         hp = mainPanel.transform.Find("Header/Left/Bg/HP").GetComponent<Image>();
@@ -85,6 +83,7 @@ public class MainPanel : BasePanel
         skill1 = mainPanel.transform.Find("Bottom/SkillPanel/skillOne/Image/skill1").GetComponent<Image>();
         skill2 = mainPanel.transform.Find("Bottom/SkillPanel/skillTwo/Image/skill2").GetComponent<Image>();
         skill3 = mainPanel.transform.Find("Bottom/SkillPanel/skillThree/Image/skill3").GetComponent<Image>();
+        BossHealth = mainPanel.transform.Find("Content/HealthBar").gameObject;
         GameLoop.Instance.isTimeOut = false;
     }
 
@@ -94,11 +93,13 @@ public class MainPanel : BasePanel
         {
             if (!GameObject.Find("Canvas/OverPanel"))
                 GameFacade.Instance.PanelManager.Push(new OverPanel("游戏失败",true));
+            AudioManager.Instance.PlayAudio(4,"失败音效");
         }
         else
         {
             if (!GameObject.Find("Canvas/OverPanel"))
                 GameFacade.Instance.PanelManager.Push(new OverPanel("游戏通关"));
+            AudioManager.Instance.PlayAudio(4,"胜利音效");
         }
     }
 }

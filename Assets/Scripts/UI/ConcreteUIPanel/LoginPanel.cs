@@ -14,16 +14,13 @@ public class LoginPanel : BasePanel
     
     private bool isLoadChatPanel;//判断是否可以在主线程切换到聊天室里面
 
+    private bool LoginFail;
+
     public LoginPanel() : base(new UIType(path))
     {
         username = null;
     }
 
-    public LoginPanel(string username) : base(new UIType(path))
-    {
-        this.username = username;
-    }
-    
     // ReSharper disable Unity.PerformanceAnalysis
     public override void OnEnter()
     {
@@ -31,15 +28,22 @@ public class LoginPanel : BasePanel
         
         UITool.FindChildGameObject("UserName").GetComponentInChildren<InputField>().text = username;
         //退出
-        UITool.GetOrAddComponentInChildren<Button>("BtnExit").onClick.AddListener(Pop);
+        UITool.GetOrAddComponentInChildren<Button>("BtnExit").onClick.AddListener(()=>
+        {
+            AudioManager.Instance.PlayButtonAudio();
+            Pop();
+        });
         //注册
         UITool.GetOrAddComponentInChildren<Button>("BtnRegister").onClick.AddListener(() =>
         {
+            AudioManager.Instance.PlayButtonAudio();
+            Pop();
             Push(new RegisterPanel());
         });
         //登录
         UITool.GetOrAddComponentInChildren<Button>("BtnPlay").onClick.AddListener(() =>
         {
+            AudioManager.Instance.PlayButtonAudio();
             //检查账号密码
             string username = UITool.FindChildGameObject("UserName").GetComponentInChildren<InputField>().text;
             string password = UITool.FindChildGameObject("PassWord").GetComponentInChildren<InputField>().text;
@@ -53,22 +57,35 @@ public class LoginPanel : BasePanel
             {
                 Debug.Log("密码不能为空");
                 return;
-            } 
+            }
+
+            this.username = username;
             
             // 发送数据给服务器
             loginRequest.SendRequest(username,password);
             
-            if (isLoadChatPanel)
-            {
-                Debug.Log("进入下一个场景");
-                isLoadChatPanel = false;
-                GameFacade.Instance.PlayerName = username;
-                ClientManager.Instance.Username = username;
-                SceneStateController.Instance.SetState(new MainScene());
-            }
+            
         });
     }
-    
+
+    public override void OnUpdata()
+    {
+        if (isLoadChatPanel)
+        {
+            Debug.Log("进入下一个场景");
+            isLoadChatPanel = false;
+            GameFacade.Instance.PlayerName = username;
+            ClientManager.Instance.Username = username;
+            SceneStateController.Instance.SetState(new MainScene());
+        }
+
+        if (LoginFail)
+        {
+            LoginFail = false;
+            Push((new NoticePanel("登录失败，请检查用户名与密码")));
+        }
+    }
+
     //点击登陆界面的登录按钮后接收到响应的方法
     public void OnLoginResponse(ReturnCode requestCode)
     {
@@ -79,6 +96,7 @@ public class LoginPanel : BasePanel
         }
         else
         {
+            LoginFail = true;
             Debug.Log("登陆失败");
         }
     }

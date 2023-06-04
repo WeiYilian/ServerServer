@@ -25,22 +25,19 @@ public class CharacterStats : MonoBehaviour
         if (transform.CompareTag("Zombie"))
         {
             int playerLevel = PlayerConctroller.Instance.CharacterStats.CurrentLevel;
-            float health = Random.Range(5 * playerLevel, 10 * playerLevel);
+            float health = Random.Range(1 * playerLevel, 6 * playerLevel);
+            MaxHealth = health;
             CurrentHealth = Mathf.Min(MaxHealth, health);
-            
+
             MinDamage = Random.Range(1 * playerLevel, 2 * playerLevel);
-            MaxDamage = Random.Range(2 * playerLevel, 3 * playerLevel);
-
-            CurrentDefence = 1 * playerLevel;
-
+            MaxDamage = Random.Range(3 * playerLevel, 4 * playerLevel);
+            
             if (GameController.Instance.IsFinalStage)
             {
                 //最终模式下，全部属性翻倍
-                CurrentHealth *= 2;
                 MinDamage *= 2;
                 MaxDamage *= 2;
                 CurrentDefence *= 2;
-                GetComponent<NavMeshAgent>().speed = 1.5f;
             }
         }
     }
@@ -124,11 +121,15 @@ public class CharacterStats : MonoBehaviour
             if (!PlayerConctroller.Instance.IsHit)
             {
                 PlayerConctroller.Instance.IsHit = true;
+                AudioManager.Instance.PlayAudio(3,"Hit");
                 defener.GetComponent<Animator>().SetTrigger("Hit");
             }
         }
         else
-           defener.GetComponent<Animator>().SetTrigger("Hit");//播放敌人被打动画
+        {
+            AudioManager.Instance.PlayAudio(3,"主角伤害");
+            defener.GetComponent<Animator>().SetTrigger("Hit");//播放敌人被打动画
+        }
 
         //update UI
         //UpdateHealthBarOnAttack?.Invoke(CurrentHealth,MaxHealth);

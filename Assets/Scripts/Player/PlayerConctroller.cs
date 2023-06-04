@@ -14,6 +14,14 @@ public class PlayerConctroller : MonoBehaviour
     [HideInInspector] public CameraController photographer;
     //摄像机跟随的位置
     [HideInInspector] public Transform followingTarget;
+    
+    //背包
+    public Inventory MyBag;
+
+    public GameObject LevelUP;
+
+    public GameObject ReturnBlood;
+
 
     private CharacterStats characterStats;
 
@@ -22,6 +30,8 @@ public class PlayerConctroller : MonoBehaviour
     private AttackController attackController;
 
     private AttribController attribController;
+
+    public MainPanel MainPanel;
 
     private string playerName;
 
@@ -38,6 +48,9 @@ public class PlayerConctroller : MonoBehaviour
     private bool isAir;
     //判断是否死亡
     private bool isDeath;
+    public bool isReturnBlood;
+
+    private float Healthtimer = 5f;
 
     #region 共有属性
 
@@ -89,8 +102,6 @@ public class PlayerConctroller : MonoBehaviour
     private void Start()
     {
         Init();
-
-        GameController.Instance.Box = 2;
     }
 
     
@@ -119,7 +130,28 @@ public class PlayerConctroller : MonoBehaviour
             attribController.Init();
         }
         
-        if (isDeath || GameLoop.Instance.isTimeOut) return;
+        attribController.SuperviserNumber();
+        
+        if (isDeath || GameLoop.Instance.isTimeOut || !GameController.Instance.GameStart) return;
+        
+        //如果挨打，直接返回
+        if (isHit)
+        {
+            ThreeSkillOut();
+            return;
+        }
+
+        if (isReturnBlood)
+        {
+            Healthtimer -= Time.deltaTime;
+            float Hplimit = characterStats.CurrentHealth + 20;
+            characterStats.CurrentHealth = Mathf.Min(Mathf.Lerp(characterStats.CurrentHealth, characterStats.CurrentHealth + 4,
+                Time.deltaTime), characterStats.MaxHealth);
+            if(Healthtimer<=0)
+                ThreeSkillOut();
+
+            return;
+        }
         
         PlayerDeath();
         
@@ -135,8 +167,7 @@ public class PlayerConctroller : MonoBehaviour
 
         if (animator.GetCurrentAnimatorStateInfo(3).IsName("Base State"))
             isHit = false;
-
-        attribController.SuperviserNumber();
+        
         attackController.Attack();
         moveController.PlayerAction();
     }
@@ -148,6 +179,7 @@ public class PlayerConctroller : MonoBehaviour
         if(characterStats.CurrentHealth <= 0)
         {
             isDeath = true;
+            AudioManager.Instance.PlayAudio(2,"Die");
             animator.SetTrigger("Die");
             EvenCenter.BroadCast(EventNum.GAMEOVER);
         }
@@ -196,6 +228,29 @@ public class PlayerConctroller : MonoBehaviour
         canMove = true;
         isAttack = false;
     }
+
+    public void HitEnd()
+    {
+        isHit = false;
+    }
+
+    public void ThreeSkill()
+    {
+        isReturnBlood = true;
+        AudioManager.Instance.PlayAudio(4,"Summon");
+        ReturnBlood.GetComponent<ParticleSystem>().Play();
+    }
+
+    private void ThreeSkillOut()
+    {
+        characterStats.CurrentHealth = Mathf.FloorToInt(characterStats.CurrentHealth);
+        isReturnBlood = false;
+        AudioManager.Instance.StopAudio(4);
+        ReturnBlood.GetComponent<ParticleSystem>().Stop();
+        animator.SetBool("ReturnHP",false);
+        Healthtimer = 5;
+    }
+    
 
     #endregion
    

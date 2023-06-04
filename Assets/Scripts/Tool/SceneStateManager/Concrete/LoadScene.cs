@@ -19,6 +19,7 @@ public class LoadScene : SceneState
     
     public override void StateStart()
     {
+        AudioManager.Instance.PlayBGMAudio("Loading");
         GameObject loadingPanel = GameObject.Find("LoadingPanel");
         LoadBar = loadingPanel.transform.Find("LoadBar").GetComponent<Image>();
         LoadNumber = loadingPanel.transform.Find("LoadNumber").GetComponent<Text>();

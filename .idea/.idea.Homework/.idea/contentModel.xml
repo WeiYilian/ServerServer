@@ -4,9 +4,119 @@
     <e p="C:\Users\888\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
     <e p="C:\Users\888\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_Homework.780257445.00" t="ExcludeRecursive" />
     <e p="D:\learn\Server\HomeWork\HomeWork" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="HighlightingSystemDemo" t="Include">
+          <e p="Assets" t="Include">
+            <e p="Shaders" t="Include">
+              <e p="Dither.shader" t="Include" />
+              <e p="InstancedSurface.shader" t="Include" />
+              <e p="InstancedTransparent.shader" t="Include" />
+            </e>
+          </e>
+          <e p="Scripts" t="Include">
+            <e p="Advanced" t="Include">
+              <e p="Deprecated" t="Include">
+                <e p="HighlighterBase.cs" t="Include" />
+                <e p="HighlighterConstant.cs" t="Include" />
+                <e p="HighlighterFlashing.cs" t="Include" />
+                <e p="HighlighterInteractive.cs" t="Include" />
+                <e p="HighlighterOccluder.cs" t="Include" />
+                <e p="HighlighterSpectrum.cs" t="Include" />
+                <e p="HighlightingUpgrade.cs" t="Include" />
+              </e>
+              <e p="HighlighterFilterAdvanced.cs" t="Include" />
+              <e p="HighlighterInteractionDemo.cs" t="Include" />
+              <e p="HighlighterRevealer.cs" t="Include" />
+              <e p="HighlighterRevealerManager.cs" t="Include" />
+              <e p="HighlighterToggle.cs" t="Include" />
+              <e p="HighlightingPresetLoop.cs" t="Include" />
+            </e>
+            <e p="Basic" t="Include">
+              <e p="HighlighterBasic.cs" t="Include" />
+              <e p="HighlighterFilterBasic.cs" t="Include" />
+              <e p="HighlighterHover.cs" t="Include" />
+            </e>
+            <e p="Helpers" t="Include">
+              <e p="BehaviourToggle.cs" t="Include" />
+              <e p="CompoundObjectController.cs" t="Include" />
+              <e p="GameObjectToggle.cs" t="Include" />
+              <e p="MovementController.cs" t="Include" />
+              <e p="RotationController.cs" t="Include" />
+            </e>
+            <e p="Service" t="Include">
+              <e p="CameraFlyController.cs" t="Include" />
+              <e p="RaycastController.cs" t="Include" />
+            </e>
+            <e p="UI" t="Include">
+              <e p="ControlsUI.cs" t="Include" />
+              <e p="FPSCounter.cs" t="Include" />
+              <e p="PresetSelector.cs" t="Include" />
+              <e p="SceneLoader.cs" t="Include" />
+              <e p="UI.cs" t="Include" />
+              <e p="UIManager.cs" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="Package" t="Include">
+          <e p="Enemy" t="Include">
+            <e p="ExplosiveLLC" t="Include">
+              <e p="Demo Elements" t="Include">
+                <e p="Code" t="Include">
+                  <e p="CameraController1.cs" t="Include" />
+                  <e p="GUIControls.cs" t="Include" />
+                </e>
+              </e>
+              <e p="Editor" t="Include">
+                <e p="SetupInputLayers.cs" t="Include" />
+              </e>
+              <e p="SuperCharacterController" t="Include">
+                <e p="Scripts" t="Include">
+                  <e p="Gravity.cs" t="Include" />
+                  <e p="PlayerCamera.cs" t="Include" />
+                  <e p="PlayerInputController.cs" t="Include" />
+                  <e p="PlayerMachine.cs" t="Include" />
+                  <e p="PlayerMachineDebug.cs" t="Include" />
+                  <e p="SimpleStateMachine.cs" t="Include" />
+                </e>
+                <e p="SuperCharacterController" t="Include">
+                  <e p="Core" t="Include">
+                    <e p="BruteForceMesh.cs" t="Include" />
+                    <e p="BSPTree.cs" t="Include" />
+                    <e p="SuperCharacterController.cs" t="Include" />
+                    <e p="SuperCollider.cs" t="Include" />
+                    <e p="SuperCollisionType.cs" t="Include" />
+                    <e p="SuperMath.cs" t="Include" />
+                    <e p="SuperStateMachine.cs" t="Include" />
+                  </e>
+                  <e p="DebugDraw.cs" t="Include" />
+                  <e p="Math3d.cs" t="Include" />
+                  <e p="Readme.txt" t="Include" />
+                </e>
+              </e>
+              <e p="Warrior FREE" t="Include">
+                <e p="Code" t="Include">
+                  <e p="AnimatorParentMove.cs" t="Include" />
+                  <e p="IKHands.cs" t="Include" />
+                  <e p="WarriorAnimatorEvents.cs" t="Include" />
+                  <e p="WarriorController.cs" t="Include" />
+                  <e p="WarriorData.cs" t="Include" />
+                  <e p="WarriorInputController.cs" t="Include" />
+                  <e p="WarriorInputSystemController.cs" t="Include" />
+                  <e p="WarriorMovementController.cs" t="Include" />
+                  <e p="WarriorTiming.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="Ork berserker" t="Include">
+              <e p="materials" t="Include">
+                <e p="Standard_Two_Sided .shader" t="Include" />
+              </e>
+            </e>
+          </e>
           <e p="Hovl Studio" t="Include">
             <e p="Procedural fire" t="Include">
               <e p="Demo scene" t="Include">
@@ -17,6 +127,135 @@
               </e>
             </e>
           </e>
+          <e p="Shift - Complete Sci-Fi UI" t="Include">
+            <e p="Editor" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="ExtendedColorPicker.cs" t="Include" />
+                <e p="InitShiftUI.cs" t="Include" />
+                <e p="ToolsMenu.cs" t="Include" />
+                <e p="UIManagerEditor.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Read Me.txt" t="Include" />
+            <e p="Scripts" t="Include">
+              <e p="Buttons" t="Include">
+                <e p="ChapterButton.cs" t="Include" />
+                <e p="FavoriteButton.cs" t="Include" />
+                <e p="MainButton.cs" t="Include" />
+                <e p="MainPanelButton.cs" t="Include" />
+                <e p="QuickMatchButton.cs" t="Include" />
+                <e p="SettingsButton.cs" t="Include" />
+                <e p="ShortcutButton.cs" t="Include" />
+                <e p="SpotlightButton.cs" t="Include" />
+              </e>
+              <e p="Editor Handlers" t="Include">
+                <e p="ShiftUIEditorHandler.cs" t="Include" />
+              </e>
+              <e p="Event" t="Include">
+                <e p="HoldKeyEvent.cs" t="Include" />
+                <e p="PointerEnterEvents.cs" t="Include" />
+                <e p="PressKeyEvent.cs" t="Include" />
+                <e p="TimedEvent.cs" t="Include" />
+              </e>
+              <e p="Input" t="Include">
+                <e p="GamepadChecker.cs" t="Include" />
+                <e p="ScrollGamepadManager.cs" t="Include" />
+                <e p="SliderGamepadManager.cs" t="Include" />
+                <e p="VirtualCursor.cs" t="Include" />
+                <e p="VirtualCursorAnimate.cs" t="Include" />
+              </e>
+              <e p="Other" t="Include">
+                <e p="CanvasManager.cs" t="Include" />
+                <e p="EditorDemoPositionFix.cs" t="Include" />
+                <e p="ExitToSystem.cs" t="Include" />
+                <e p="LaunchURL.cs" t="Include" />
+                <e p="LayoutGroupPositionFix.cs" t="Include" />
+                <e p="QualityManager.cs" t="Include" />
+                <e p="ScrollForMore.cs" t="Include" />
+                <e p="UIElementInFront.cs" t="Include" />
+              </e>
+              <e p="Panel" t="Include">
+                <e p="FriendsPanelManager.cs" t="Include" />
+                <e p="MainPanelButtonParent.cs" t="Include" />
+                <e p="MainPanelManager.cs" t="Include" />
+                <e p="ModalWindowManager.cs" t="Include" />
+                <e p="ServerBrowserManager.cs" t="Include" />
+                <e p="SplashScreenManager.cs" t="Include" />
+              </e>
+              <e p="Rendering" t="Include">
+                <e p="BlurManager.cs" t="Include" />
+                <e p="GradientEffect.cs" t="Include" />
+                <e p="UIParticleRenderer.cs" t="Include" />
+              </e>
+              <e p="UI Element" t="Include">
+                <e p="CustomInputField.cs" t="Include" />
+                <e p="HorizontalSelector.cs" t="Include" />
+                <e p="SliderManager.cs" t="Include" />
+                <e p="SwitchHandler.cs" t="Include" />
+                <e p="SwitchManager.cs" t="Include" />
+                <e p="UIElementSound.cs" t="Include" />
+              </e>
+              <e p="UI Manager" t="Include">
+                <e p="UIManager.cs" t="Include" />
+                <e p="UIManagerBackground.cs" t="Include" />
+                <e p="UIManagerBGMusic.cs" t="Include" />
+                <e p="UIManagerGameLogo.cs" t="Include" />
+                <e p="UIManagerImage.cs" t="Include" />
+                <e p="UIManagerParticle.cs" t="Include" />
+                <e p="UIManagerText.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Shaders" t="Include">
+              <e p="Fast UI Blur.shader" t="Include" />
+              <e p="Masked UI Blur.shader" t="Include" />
+              <e p="UI Blur.shader" t="Include" />
+              <e p="UI Particle Additive.shader" t="Include" />
+            </e>
+          </e>
+          <e p="UI" t="Include">
+            <e p="Dark_Brown_GUI_kit" t="Include">
+              <e p="Dark_Brown_GUI_kit.txt" t="Include" />
+            </e>
+            <e p="Sci-Fi UI" t="Include">
+              <e p="Demo_Assets" t="Include">
+                <e p="Scripts" t="Include">
+                  <e p="GUI_Demo.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="Plugins" t="Include">
+          <e p="HighlightingSystem" t="Include">
+            <e p="Editor" t="Include">
+              <e p="HighlighterEditor.cs" t="Include" />
+              <e p="HighlightingBlitterEditor.cs" t="Include" />
+              <e p="HighlightingPresetEditor.cs" t="Include" />
+              <e p="HighlightingRendererEditor.cs" t="Include" />
+            </e>
+            <e p="Resources" t="Include">
+              <e p="HighlightingBlur.shader" t="Include" />
+              <e p="HighlightingComposite.shader" t="Include" />
+              <e p="HighlightingCut.shader" t="Include" />
+              <e p="HighlightingOpaque.shader" t="Include" />
+              <e p="HighlightingTransparent.shader" t="Include" />
+            </e>
+            <e p="Scripts" t="Include">
+              <e p="Highlighter.cs" t="Include" />
+              <e p="HighlighterBlocker.cs" t="Include" />
+              <e p="HighlightingBlitter.cs" t="Include" />
+              <e p="HighlightingRenderer.cs" t="Include" />
+              <e p="Internal" t="Include">
+                <e p="EndOfFrame.cs" t="Include" />
+                <e p="HighlighterCore.cs" t="Include" />
+                <e p="HighlighterRenderer.cs" t="Include" />
+                <e p="HighlightingBase.cs" t="Include" />
+                <e p="HighlightingPreset.cs" t="Include" />
+                <e p="MaterialExtensions.cs" t="Include" />
+                <e p="ShaderPropertyID.cs" t="Include" />
+              </e>
+            </e>
+          </e>
         </e>
         <e p="Scripts" t="Include">
           <e p="Character Stats" t="Include">
@@ -24,6 +263,7 @@
             <e p="CharacterStats.cs" t="Include" />
           </e>
           <e p="Enemy" t="Include">
+            <e p="Boss.cs" t="Include" />
             <e p="EnemyConcroller.cs" t="Include" />
             <e p="EnemySpawn.cs" t="Include" />
             <e p="IEnemy.cs" t="Include" />
@@ -32,6 +272,21 @@
             <e p="AttackController.cs" t="Include" />
             <e p="AttribController.cs" t="Include" />
             <e p="CameraController.cs" t="Include" />
+            <e p="InventoryManager" t="Include">
+              <e p="Base" t="Include">
+                <e p="BagItem.cs" t="Include" />
+                <e p="Inventory.cs" t="Include" />
+              </e>
+              <e p="Drag" t="Include">
+                <e p="ItemOnDrag.cs" t="Include" />
+                <e p="MoveBag.cs" t="Include" />
+              </e>
+              <e p="InventoryManager.cs" t="Include" />
+              <e p="IPoolable.cs" t="Include" />
+              <e p="ItemOnSlot.cs" t="Include" />
+              <e p="Slot.cs" t="Include" />
+              <e p="UseItem.cs" t="Include" />
+            </e>
             <e p="MoveController.cs" t="Include" />
             <e p="PlayerConctroller.cs" t="Include" />
             <e p="SkillManager" t="Include">
@@ -61,11 +316,18 @@
               <e p="ResourceAssetFactory.cs" t="Include" />
               <e p="ResourceAssetProxy.cs" t="Include" />
             </e>
+            <e p="AudioManager" t="Include">
+              <e p="AudioManager.cs" t="Include" />
+              <e p="AudioObjectPool.cs" t="Include" />
+            </e>
+            <e p="EndPoint.cs" t="Include" />
             <e p="EvenCenter.cs" t="Include" />
             <e p="ExtensionMethod.cs" t="Include" />
             <e p="GameController.cs" t="Include" />
             <e p="GameFacade.cs" t="Include" />
             <e p="GameLoop.cs" t="Include" />
+            <e p="Health.cs" t="Include" />
+            <e p="LookAtGO.cs" t="Include" />
             <e p="Other" t="Include">
               <e p="Box.cs" t="Include" />
               <e p="Door.cs" t="Include" />
@@ -75,13 +337,13 @@
                 <e p="SceneState.cs" t="Include" />
               </e>
               <e p="Concrete" t="Include">
-                <e p="Game2Scene.cs" t="Include" />
                 <e p="LoadScene.cs" t="Include" />
                 <e p="MainScene.cs" t="Include" />
                 <e p="StartScene.cs" t="Include" />
               </e>
               <e p="SceneStateController.cs" t="Include" />
             </e>
+            <e p="Transition.cs" t="Include" />
           </e>
           <e p="UI" t="Include">
             <e p="Base" t="Include">
@@ -89,14 +351,20 @@
               <e p="UIType.cs" t="Include" />
             </e>
             <e p="ConcreteUIPanel" t="Include">
+              <e p="CharacterPanel.cs" t="Include" />
               <e p="ChatPanel.cs" t="Include" />
               <e p="ConfirmPanel.cs" t="Include" />
+              <e p="GuidePanel.cs" t="Include" />
+              <e p="GuidePanelMON.cs" t="Include" />
+              <e p="LoadingPanel.cs" t="Include" />
               <e p="LoginPanel.cs" t="Include" />
               <e p="MainPanel.cs" t="Include" />
               <e p="NoticePanel.cs" t="Include" />
               <e p="OverPanel.cs" t="Include" />
               <e p="RegisterPanel.cs" t="Include" />
+              <e p="SetPanel.cs" t="Include" />
               <e p="StartPanel.cs" t="Include" />
+              <e p="UserMessagePanel.cs" t="Include" />
             </e>
             <e p="PanelManager.cs" t="Include" />
             <e p="UIManager.cs" t="Include" />

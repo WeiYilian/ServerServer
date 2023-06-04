@@ -18,10 +18,15 @@ public class ConfirmPanel : BasePanel
     {
         GameObject.Find("Canvas/ConfirmPanel/Text").GetComponent<Text>().text = message;
         
-        UITool.GetOrAddComponentInChildren<Button>("BtnExit").onClick.AddListener(Pop);
+        UITool.GetOrAddComponentInChildren<Button>("BtnExit").onClick.AddListener(()=>
+        {
+            AudioManager.Instance.PlayButtonAudio();
+            Pop();
+        });
         
         UITool.GetOrAddComponentInChildren<Button>("Confirm").onClick.AddListener(() =>
         {
+            AudioManager.Instance.PlayButtonAudio();
             Pop();
         });
     }

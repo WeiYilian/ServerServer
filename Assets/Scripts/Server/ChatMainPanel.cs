@@ -61,4 +61,9 @@ public partial class ChatMainPanel : MonoBehaviour
         isSendInfo = true;
         this.data = data;
     }
+
+    public void Exit()
+    {
+        GameFacade.Instance.PanelManager.Pop();
+    }
 }

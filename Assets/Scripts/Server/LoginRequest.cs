@@ -19,7 +19,7 @@ public class LoginRequest : BaseRequest
     public void SendRequest(string username,string password)
     {
         string data = username + "," + password;
-        //TODO:通过clientManager发送登录请求
+        //通过clientManager发送登录请求
         ClientManager.Instance.SendRequest(requestCode,actionCode,data);
     }
     

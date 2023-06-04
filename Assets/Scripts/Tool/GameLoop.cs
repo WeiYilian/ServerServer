@@ -32,8 +32,8 @@ public class GameLoop : MonoBehaviour
 
     private void Start()
     {
-        //SceneStateController.Instance.SetState(new StartScene(),false);
-        SceneStateController.Instance.SetState(new MainScene(),false);
+        SceneStateController.Instance.SetState(new StartScene(),false);
+        //SceneStateController.Instance.SetState(new MainScene(),false);
     }
 
     private void Update()

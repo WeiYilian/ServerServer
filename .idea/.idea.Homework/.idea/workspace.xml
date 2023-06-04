@@ -3,10 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="2e65f7a4-ae3f-47f5-9e4b-913d273283d5" name="默认的" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Homework/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Homework/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Homework/.idea/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Homework/.idea/riderModule.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Homework/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Homework/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Homework/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Homework/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Enemy/Zombie.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Enemy/Zombie.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/PlayerConcroller.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Player/PlayerConcroller.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/GameData/PlayerData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameData/PlayerData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameData/ZombieData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameData/ZombieData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Package/Enemy/Gruesome_Zombie_AnimSet/Animation/Humanoid/Inplace/zombie_atk02_inplace.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Package/Enemy/Gruesome_Zombie_AnimSet/Animation/Humanoid/Inplace/zombie_atk02_inplace.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Package/Enemy/Gruesome_Zombie_AnimSet/Ect/AnimatorContrl/bite_Back_A.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Package/Enemy/Gruesome_Zombie_AnimSet/Ect/AnimatorContrl/bite_Back_A.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Package/Humanoid/Inplace/attacked_f_inplace.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Package/Humanoid/Inplace/attacked_f_inplace.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Package/Mega_Posapocaliptic_Character/Images_For_Inventory/Mask_Mesh_05.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Package/Mega_Posapocaliptic_Character/Images_For_Inventory/Mask_Mesh_05.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Package/武士刀动画/Animation/katana/APose/Hit/Root/GhostSamurai_APose_Hit_F_Root.FBX.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Package/武士刀动画/Animation/katana/APose/Hit/Root/GhostSamurai_APose_Hit_F_Root.FBX.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Text.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Text.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/GameObject/Slot.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/GameObject/Slot.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/GameObject/Zombie1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/GameObject/Zombie1.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/GameObject/Zombie2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/GameObject/Zombie2.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/GameObject/Zombie3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/GameObject/Zombie3.prefab" afterDir="false" />
@@ -16,36 +25,51 @@
       <change beforePath="$PROJECT_DIR$/Assets/Resources/GameObject/Zombie7.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/GameObject/Zombie7.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/GameObject/Zombie8.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/GameObject/Zombie8.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/GameObject/Zombie9.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/GameObject/Zombie9.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/UI/Panel/CharacterPanel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/UI/Panel/CharacterPanel.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/UI/Panel/ChatPanel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/UI/Panel/ChatPanel.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/UI/Panel/ConfirmPanel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/UI/Panel/ConfirmPanel.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/UI/Panel/LoginPanel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/UI/Panel/LoginPanel.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/UI/Panel/MainPanel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/UI/Panel/MainPanel.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/UI/Panel/NoticePanel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/UI/Panel/NoticePanel.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/UI/Panel/OverPanel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/UI/Panel/OverPanel.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/UI/Panel/RegisterPanel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/UI/Panel/RegisterPanel.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/UI/Panel/TaskManagerPanel.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/UI/Panel/TaskManagerPanel.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/UI/Panel/UserManagerPanel.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/UI/Panel/UserManagerPanel.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/UI/Panel/UserMessagePanel.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/UI/Panel/UserMessagePanel.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/UI/Panel/SetPanel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/UI/Panel/SetPanel.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/UI/Panel/StartPanel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/UI/Panel/StartPanel.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/NavMesh.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/NavMesh.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Map_v2.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Map_v2.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game2.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game2.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Start.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Start.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character Stats/CharacterData_SO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character Stats/CharacterData_SO.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character Stats/CharacterStats.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character Stats/CharacterStats.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyConcroller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyConcroller.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemySpawn.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemySpawn.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/AttackController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/AttackController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/AttribController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/AttribController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/CameraController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/MoveController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/MoveController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerConctroller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerConctroller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tool/GameControler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tool/GameController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tool/GameControler.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tool/GameController.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tool/GameFacade.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tool/GameFacade.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/SkillManager/Concrete/SkillTwo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/SkillManager/Concrete/SkillTwo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Server/ChatMainPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Server/ChatMainPanel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Server/ClientManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Server/ClientManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Server/LoginRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Server/LoginRequest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tool/AssetFactory/ResourceAssetFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tool/AssetFactory/ResourceAssetFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tool/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tool/GameController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tool/GameLoop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tool/GameLoop.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tool/Other/Box.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tool/Other/Box.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tool/SceneStateManager/Concrete/Game2Scene.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tool/SceneStateManager/Concrete/Game2Scene.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tool/SceneStateManager/Concrete/LoadScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tool/SceneStateManager/Concrete/LoadScene.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tool/SceneStateManager/Concrete/MainScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tool/SceneStateManager/Concrete/MainScene.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/ConcreteUIPanel/ConfirmPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ConcreteUIPanel/ConfirmPanel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/ConcreteUIPanel/LoginPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ConcreteUIPanel/LoginPanel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/ConcreteUIPanel/MainPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ConcreteUIPanel/MainPanel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/ConcreteUIPanel/OverPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ConcreteUIPanel/OverPanel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/ConcreteUIPanel/RegisterPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ConcreteUIPanel/RegisterPanel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/ConcreteUIPanel/StartPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ConcreteUIPanel/StartPanel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/PanelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/PanelManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,80 +80,92 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/InventoryManager/UseItem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ConcreteUIPanel/MainPanel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/AttribController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/PanelManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ConcreteUIPanel/GuidePanelMON.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/SkillManager/Concrete/SkillFour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemySpawn.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ConcreteUIPanel/UserMessagePanel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tool/EndPoint.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2E0A4813-4CC8-4502-8FB1-1656FDC79D23/58/56962a58/KeyCode.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/Boss.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tool/GameController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyConcroller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ConcreteUIPanel/ConfirmPanel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ConcreteUIPanel/OverPanel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tool/SceneStateManager/Concrete/StartScene.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ConcreteUIPanel/MainPanel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/AttribController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tool/Health.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ConcreteUIPanel/ChatPanel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tool/Other/Box.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/PanelManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ConcreteUIPanel/GuidePanel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ConcreteUIPanel/LoadingPanel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ConcreteUIPanel/CharacterPanel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/IEnemy.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/SkillManager/Concrete/SkillFour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemySpawn.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../Unity/11111/HomeWork/Work/Assets/Scripts/Tool/AudioManager/AudioManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tool/LookAtGO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tool/Other/Door.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tool/SceneStateManager/Concrete/Game2Scene.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/AttackController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tool/Transition.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E342B252-3566-4B72-B6C6-2E16283A8EB5/c6/7b9965d3/TextMesh.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tool/EvenCenter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Server/ChatRequest.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2E0A4813-4CC8-4502-8FB1-1656FDC79D23/58/56962a58/KeyCode.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Server/BaseRequest.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterController/PlayerController/CameraController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterController/PlayerController/AttribController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterController/PlayerController/MoveController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterController/PlayerController/PlayerConctroller.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/PlayerConctroller.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/MoveController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player/SkillManager/Base/BaseSkill.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Base/BasePanel.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player/SkillManager/Concrete/SkillThree.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player/SkillManager/Concrete/SkillFour.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Tool/SceneStateManager/Concrete/StartScene.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player/SkillManager/Concrete/SkillOne.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player/SkillManager/Concrete/SkillTwo.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Character Stats/ScriptableObject/CharacterData_SO.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Character Stats/ScriptableObject/CharacterStats.cs" />
-      <option value="$PROJECT_DIR$/Assets/RPGCombatSystem/Scripts/PlayerController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Flooded_Grounds/PostProcessing/Editor/PropertyDrawers/MinDrawer.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player/AttackController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Tool/AssetFactory/ResourceAssetFactory.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player/MoveController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Tool/Other/Door.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Tool/EvenCenter.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Tool/Gamemanager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player/AttribController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Tool/GameManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Tool/GameControler.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Tool/GameFacade.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Tool/Other/Box.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyConcroller.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemySpawn.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player/CameraController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/ConcreteUIPanel/ConfirmPanel.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Tool/GameController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Character Stats/CharacterStats.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/ConcreteUIPanel/StartPanel.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/ConcreteUIPanel/RegisterPanel.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Server/RegisterRequest.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Tool/SceneStateManager/Concrete/LoadScene.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/PanelManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerConctroller.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Server/ChatPanel.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Server/ChatRequest.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/ConcreteUIPanel/ChatPanel.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Server/LoginRequest.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Server/ChatMainPanel.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/ConcreteUIPanel/LoginPanel.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Tool/GameLoop.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Tool/SceneStateManager/Concrete/MainScene.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Tool/SceneStateManager/Concrete/Game2Scene.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/ConcreteUIPanel/MainPanel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/ConcreteUIPanel/PlayerTaskPanel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/ConcreteUIPanel/SetPanel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/ConcreteUIPanel/UserMessagePanel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Character Stats/CharacterData_SO.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/ConcreteUIPanel/OverPanel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Tool/Transition.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/ConcreteUIPanel/LoadingPanel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Tool/LookAtGO.cs" />
+      <option value="$PROJECT_DIR$/Assets/ExplosiveLLC/Demo Elements/Code/CameraController1.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/MoveController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Tool/EndPoint.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/ConcreteUIPanel/CharacterPanel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/InventoryManager/ItemOnSlot.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/InventoryManager/Drag/ItemOnDrag.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/InventoryManager/UseItem.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/AttribController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Server/ChatMainPanel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Tool/TextEffect.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/ConcreteUIPanel/GuidePanel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Tool/AssetFactory/ResourceAssetFactory.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Tool/AudioManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/ConcreteUIPanel/ConfirmPanel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/ConcreteUIPanel/GuidePanelMON.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/CameraController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Tool/Health.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Boss.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Tool/GameLoop.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/ConcreteUIPanel/RegisterPanel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Tool/Other/Box.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Character Stats/CharacterStats.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Tool/SceneStateManager/Concrete/LoadScene.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/ConcreteUIPanel/StartPanel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Tool/SceneStateManager/Concrete/MainScene.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Tool/SceneStateManager/Concrete/StartScene.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Tool/AudioManager/AudioManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerConctroller.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemySpawn.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Tool/GameController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Server/LoginRequest.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/ConcreteUIPanel/MainPanel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/SkillManager/Concrete/SkillTwo.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/AttackController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Server/ClientManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/ConcreteUIPanel/LoginPanel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyConcroller.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2PqzjyZkdxWYgjgUXtXjctjDWQr" />
@@ -153,6 +189,14 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/Exe\Homework.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="D:\learn\Server\HomeWork\Homework\Exe" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
@@ -194,7 +238,14 @@
       <workItem from="1684980162705" duration="179000" />
       <workItem from="1684980369187" duration="5047000" />
       <workItem from="1685013878412" duration="5815000" />
-      <workItem from="1685088294249" duration="1845000" />
+      <workItem from="1685088294249" duration="2711000" />
+      <workItem from="1685343713891" duration="9954000" />
+      <workItem from="1685408784877" duration="18620000" />
+      <workItem from="1685580989466" duration="7427000" />
+      <workItem from="1685687016355" duration="14069000" />
+      <workItem from="1685719492350" duration="4525000" />
+      <workItem from="1685842583765" duration="11316000" />
+      <workItem from="1685860200088" duration="1057000" />
     </task>
     <task id="LOCAL-00001" summary="提交">
       <created>1684923667654</created>
@@ -203,7 +254,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684923667654</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="1">
+      <created>1685091501231</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1685091501231</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,6 +284,7 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="提交" />
+    <MESSAGE value="1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1" />
   </component>
 </project>

@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 50
   currentHealth: 5
-  baseDefence: 3
-  currentDefence: 3
+  baseDefence: 1
+  currentDefence: 1
   killPoint: 2
   attackRange: 2
   skillRange: 1.5

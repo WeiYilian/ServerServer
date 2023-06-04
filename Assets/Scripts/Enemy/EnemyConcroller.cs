@@ -11,37 +11,37 @@ public enum EnemySort{MAGE,WARRIOR}
 [RequireComponent(typeof(CharacterStats))]
 public class EnemyConcroller : MonoBehaviour,IEnemy
 {
-    private EnemyStates enemyStates;
-    private EnemySort enemySort;
-    private NavMeshAgent agent;
+    protected EnemyStates enemyStates;
+    protected EnemySort enemySort;
+    protected NavMeshAgent agent;
     protected Animator animator;
-    private new Collider collider;
+    protected new Collider collider;
     
     protected CharacterStats characterStats;
     
     [Header("Basic Settings")]
     public float sightRadius;//攻击范围
     public bool isGuard;
-    public bool isSpawn;
-    private float speed;
+    protected float speed;
     protected GameObject AttackTarget;
         
     public float lookAtTime;//巡逻停留时间
-    private float remainLookAtTime;//巡逻计时器
-    private float lastAttackTime;//攻击计时器
+    protected float remainLookAtTime;//巡逻计时器
+    protected float lastAttackTime;//攻击计时器
 
     [Header("Patrol State")] 
     public float patrolRange;//巡逻范围
-    private Vector3 wayPoint;//随机巡逻点
-    private Vector3 guardPos;//初始坐标
-    private Quaternion guardRotation;//初始角度(初始面向方向)
-    
+    protected Vector3 wayPoint;//随机巡逻点
+    protected Vector3 guardPos;//初始坐标
+    protected Quaternion guardRotation;//初始角度(初始面向方向)
+
     //bool配合动画
-    private bool isWalk;
-    private bool isChase;
-    private bool isFollow;
-    private bool isDead;
-    private bool playerDead;
+    protected bool isWalk;
+    protected bool isChase;
+    protected bool isFollow;
+    protected bool isDead;
+    protected bool playerDead;
+    private bool isFall;
 
     protected void Awake()
     {
@@ -55,7 +55,7 @@ public class EnemyConcroller : MonoBehaviour,IEnemy
         remainLookAtTime = lookAtTime;
     }
 
-    private IEnumerator Start()
+    protected IEnumerator Start()
     {
         EvenCenter.AddListener(EventNum.GAMEOVER,EndNotify);
         
@@ -80,14 +80,16 @@ public class EnemyConcroller : MonoBehaviour,IEnemy
 
     private void Update()
     {
-        if (playerDead || isSpawn || GameLoop.Instance.isTimeOut) return;
-        
-        if (characterStats.CurrentHealth == 0)
+        if (playerDead || GameLoop.Instance.isTimeOut || !GameController.Instance.GameStart) return;
+
+        if (GameController.Instance.FirstOver && transform.CompareTag("Zombie"))
+            characterStats.CurrentHealth = 0;
+        if (characterStats.CurrentHealth <= 0)
             isDead = true;
         
-        if (animator.GetCurrentAnimatorStateInfo(2).IsName("Damage") ||
-            animator.GetCurrentAnimatorStateInfo(2).IsName("Dizzy"))
+        if (animator.GetCurrentAnimatorStateInfo(2).IsName("Damage"))
             return;
+       
 
         SwitchStates();
         SwitchAnimation();
@@ -108,7 +110,7 @@ public class EnemyConcroller : MonoBehaviour,IEnemy
     /// <summary>
     /// 状态切换
     /// </summary>
-    void SwitchStates()
+    protected virtual void SwitchStates()
     {
         //如果生命值等于0，切换到DEAD
         if (isDead)
@@ -129,7 +131,8 @@ public class EnemyConcroller : MonoBehaviour,IEnemy
                     AttackTarget = PlayerConctroller.Instance.gameObject;
                     enemyStates = EnemyStates.CHASE;
                 }
-                
+
+                isWalk = false;
                 isChase = false;
                 agent.isStopped = true;
 
@@ -178,7 +181,7 @@ public class EnemyConcroller : MonoBehaviour,IEnemy
 
                 agent.speed = speed * 7;
                 
-                if (!FoundPlayer()  && !GameController.Instance.IsFinalStage)
+                if (!FoundPlayer() && !GameController.Instance.IsFinalStage)
                 {
                     isFollow = false;
                     if (remainLookAtTime > 0)
@@ -223,8 +226,14 @@ public class EnemyConcroller : MonoBehaviour,IEnemy
                 }
                 break;
             case EnemyStates.DEAD://死亡模式
-                if(collider.enabled)
-                    Invoke(nameof(EnemyDie), 2f);
+                //掉落回血包
+                if (Random.Range(0f, 1f) <= 0.3f && !isFall)
+                {
+                    isFall = true;
+                    Instantiate(GameFacade.Instance.LoadGameObject("RestoreDrug"), transform.position,
+                        Quaternion.identity);
+                }
+                Destroy(gameObject,2f);
                 agent.isStopped = true;
                 collider.enabled = false;//关闭collider
                 agent.radius = 0;
@@ -243,7 +252,7 @@ public class EnemyConcroller : MonoBehaviour,IEnemy
     }
 
     //检测敌人sightRadius内是否有Player
-    bool FoundPlayer()
+    protected bool FoundPlayer()
     {
         var colliders = Physics.OverlapSphere(transform.position, sightRadius);
 
@@ -281,7 +290,7 @@ public class EnemyConcroller : MonoBehaviour,IEnemy
     }
 
     //获取随机巡逻点
-    void GetNewWayPoint()
+    protected void GetNewWayPoint()
     {
         remainLookAtTime = lookAtTime;
         
@@ -300,6 +309,7 @@ public class EnemyConcroller : MonoBehaviour,IEnemy
     //Animation Event
     public virtual void Hit()
     {
+        if (enemyStates == EnemyStates.DEAD) return;
         //如果攻击目标不为空，攻击目标在前方，没有被打就可以执行
         if (TargetInAttackRange() && transform.IsFacingTarget(AttackTarget.transform)/*扩展方法*/)
         {
@@ -311,12 +321,12 @@ public class EnemyConcroller : MonoBehaviour,IEnemy
     //Animation Event
     public virtual void KickOff()
     {
-        //TODO:重击声音
+        if (enemyStates == EnemyStates.DEAD) return;
+        
         if(TargetInSkillRange() && transform.IsFacingTarget(AttackTarget.transform)/*扩展方法*/)
         {
             var targetStats = AttackTarget.GetComponentInChildren<CharacterStats>();
             targetStats.TakeDamage(characterStats, targetStats,true);
-            
         }
     }
 
@@ -326,8 +336,6 @@ public class EnemyConcroller : MonoBehaviour,IEnemy
     //怪物胜利，游戏结束
     public void EndNotify()
     {
-        //获胜动画
-        animator.SetBool("Win",true);
         //停止所有移动
         playerDead = true;
         isChase = false;
@@ -342,37 +350,5 @@ public class EnemyConcroller : MonoBehaviour,IEnemy
     {
         Gizmos.color = Color.blue;
         Gizmos.DrawWireSphere(transform.position, sightRadius);
-    }
-
-    public void EnemyDie()
-    {
-        switch (enemySort)
-        {
-            case EnemySort.MAGE:
-                if (Random.value <= 0.8f)
-                {
-                    //TODO:掉落物品
-                }
-                break;
-            case EnemySort.WARRIOR:
-                if (Random.value <= 0.5f)
-                {
-                    //TODO:掉落物品
-                }
-                break;
-            default:
-                break;
-        } 
-    }
-    
-    public void Dispose()
-    {
-        collider.enabled = false;
-        gameObject.SetActive(false);
-    }
-
-    public void Init()
-    {
-        gameObject.SetActive(true);
     }
 }

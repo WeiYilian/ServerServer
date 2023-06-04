@@ -377,6 +377,7 @@ GameObject:
   - component: {fileID: 1445088744}
   - component: {fileID: 1445088743}
   - component: {fileID: 1445088746}
+  - component: {fileID: 1445088747}
   m_Layer: 0
   m_Name: GameLoop
   m_TagString: Untagged
@@ -435,8 +436,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2ea5a2c7153f704ca74172aaa136f23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IP: 10.100.134.9
+  IP: 10.15.70.68
   PORT: 7090
+--- !u!114 &1445088747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1445088742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3ebacef20bfdaa4393507ffe0af02f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tempVolume: 0
 --- !u!1 &1985643409
 GameObject:
   m_ObjectHideFlags: 0
